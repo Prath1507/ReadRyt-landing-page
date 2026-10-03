@@ -19,7 +19,7 @@ function App() {
   </div>
 
 <a
-  href="https://github.com/Prath1507/ReadRyt-landing-page/releases/download/v1.0.0/app-release.apk"
+  href="https://github.com/Prath1507/ReadRyt-landing-page/releases/download/v1.0.0/Readryt.apk"
   className="nav-button"
 >
   Download for Android
@@ -44,7 +44,7 @@ function App() {
 
     <div className="hero-buttons">
   <a
-  href="https://github.com/Prath1507/ReadRyt-landing-page/releases/download/v1.0.0/app-release.apk"
+  href="https://github.com/Prath1507/ReadRyt-landing-page/releases/download/v1.0.0/Readryt.apk"
   className="nav-button"
 >
   Download for Android
