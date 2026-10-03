@@ -5,7 +5,10 @@ function App() {
     <div>
     {/* Navigation */}
 <nav className="navbar">
-  <div className="logo">ReadRyt</div>
+ <div className="logo">
+  <img src="/readryticon.png" alt="ReadRyt" />
+  <span>ReadRyt</span>
+</div>
 
   <div className="nav-links">
     <a href="#home" className="active">Home</a>
@@ -15,13 +18,11 @@ function App() {
     <a href="#faq">FAQs</a>
   </div>
 
- <a
-  href="https://wa.me/91YOUR_NUMBER"
+<a
+  href="https://github.com/Prath1507/ReadRyt-landing-page/releases/download/v1.0.0/app-release.apk"
   className="nav-button"
-  target="_blank"
-  rel="noopener noreferrer"
 >
-  Talk to Us
+  Download for Android
 </a>
 </nav>
 
@@ -42,15 +43,15 @@ function App() {
     </p>
 
     <div className="hero-buttons">
-    <a
-  href="https://wa.me/91YOUR_NUMBER"
+  <a
+  href="https://github.com/Prath1507/ReadRyt-landing-page/releases/download/v1.0.0/app-release.apk"
   className="nav-button"
-  target="_blank"
-  rel="noopener noreferrer"
 >
-  Talk to Us
+  Download for Android
 </a>
-      <button className="secondary-button">See How It Works</button>
+      <a href="#how-it-works" className="secondary-button">
+  See How It Works
+</a>
     </div>
 
     <div className="hero-benefits">
@@ -92,16 +93,20 @@ function App() {
   </div>
 </main>
 
-   {/* How It Works Section */}
+ {/* How It Works Section */}
 <section className="how-it-works" id="how-it-works">
-  <h2>How it works</h2>
+  <h2>How ReadRyt works</h2>
 
-  <div className="steps">
+<div className="steps">
+
+  {/* Row 1 */}
+  <div className="steps-row">
+
     <div className="step">
       <div className="step-number">1</div>
       <div>
-        <h3>Payment received</h3>
-        <p>You receive a payment screenshot or message.</p>
+        <h3>Download the app</h3>
+        <p>Download ReadRyt on your Android phone and install the app.</p>
       </div>
     </div>
 
@@ -110,8 +115,8 @@ function App() {
     <div className="step">
       <div className="step-number">2</div>
       <div>
-        <h3>Verified</h3>
-        <p>ReadRyt checks the payment details automatically.</p>
+        <h3>Create an account</h3>
+        <p>Sign up and create your ReadRyt account.</p>
       </div>
     </div>
 
@@ -120,8 +125,8 @@ function App() {
     <div className="step">
       <div className="step-number">3</div>
       <div>
-        <h3>Identified</h3>
-        <p>It identifies the payment and what it belongs to.</p>
+        <h3>Verify your email</h3>
+        <p>Verify your email address to activate your account.</p>
       </div>
     </div>
 
@@ -130,11 +135,77 @@ function App() {
     <div className="step">
       <div className="step-number">4</div>
       <div>
-        <h3>Tracked</h3>
-        <p>Your payment record is updated and ready to view.</p>
+        <h3>Log in</h3>
+        <p>Log in to your ReadRyt account.</p>
       </div>
     </div>
+
+    <div className="step-arrow">→</div>
+
+    <div className="step">
+      <div className="step-number">5</div>
+      <div>
+        <h3>Complete onboarding</h3>
+        <p>Enter your business details and set up your ReadRyt workspace.</p>
+      </div>
+    </div>
+
   </div>
+
+  {/* Row 2 */}
+  <div className="steps-row">
+
+    <div className="step">
+      <div className="step-number">6</div>
+      <div>
+        <h3>Connect WhatsApp</h3>
+        <p>Connect WhatsApp using Linked Devices to let ReadRyt receive payment screenshots.</p>
+      </div>
+    </div>
+
+    <div className="step-arrow">→</div>
+
+    <div className="step">
+      <div className="step-number">7</div>
+      <div>
+        <h3>Enable automatic media download</h3>
+        <p>Keep automatic image downloads enabled in WhatsApp so payment screenshots can be processed.</p>
+      </div>
+    </div>
+
+    <div className="step-arrow">→</div>
+
+    <div className="step">
+      <div className="step-number">8</div>
+      <div>
+        <h3>Receive payment screenshots</h3>
+        <p>Payment screenshots received on WhatsApp are processed by ReadRyt.</p>
+      </div>
+    </div>
+
+    <div className="step-arrow">→</div>
+
+    <div className="step">
+      <div className="step-number">9</div>
+      <div>
+        <h3>Check your dashboard</h3>
+        <p>New payments appear in the Unverified tab for review.</p>
+      </div>
+    </div>
+
+    <div className="step-arrow">→</div>
+
+    <div className="step">
+      <div className="step-number">10</div>
+      <div>
+        <h3>Upload the bank statement</h3>
+        <p>ReadRyt automatically matches and sorts received payments into the Verified tab.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 </section>
 
       {/* Use Cases */}
@@ -182,27 +253,27 @@ function App() {
   </div>
 </section>
 
-{/* Talk to Us Section */}
+{/* Download Section */}
+
+
+{/* Contact Section */}
 <section className="talk-section" id="benefits">
   <div className="talk-content">
-    <p className="hero-tag">LET'S TALK</p>
+    <p className="hero-tag">GET IN TOUCH</p>
 
-    <h2>Still tracking payments manually?</h2>
+    <h2>Have questions about ReadRyt?</h2>
 
     <p>
-      We're talking to businesses to understand how they manage payment
-      screenshots and confirmations. Tell us about your workflow and help
-      us build ReadRyt the right way.
+      Contact us by email and we'll be happy to help you with ReadRyt,
+      setup, or any questions you may have.
     </p>
 
-   <a
-  href="https://wa.me/91YOUR_NUMBER"
-  className="nav-button"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Talk to Us
-</a>
+    <a
+      href="mailto:readrytplaystore@gmail.com"
+      className="nav-button"
+    >
+      Contact Us
+    </a>
   </div>
 </section>
 

@@ -17,6 +17,22 @@ body {
   color: var(--navy);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
 button {
   cursor: pointer;
   font-family: inherit;
@@ -56,7 +72,7 @@ button {
 
 .nav-button {
   border: none;
-  background-color: var(--navy);
+  background-color: green;
   color: white;
   padding: 13px 24px;
   border-radius: 8px;
@@ -453,6 +469,81 @@ button {
   text-align: right;
 }
 
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 60px auto 0;
+}
+
+.steps-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.steps-row .step {
+  flex: 1;
+  min-width: 0;
+  max-width: 240px;
+}
+
+.steps-row .step-arrow {
+  flex: 0 0 auto;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .steps-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 10px;
+    width: 100%;
+  }
+
+  .steps-row .step {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .steps-row .step-number {
+    margin-bottom: 10px;
+  }
+
+  .steps-row .step h3 {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 0 0 6px;
+  }
+
+  .steps-row .step p {
+    font-size: 12px;
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  .steps-row .step-arrow {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 20px;
@@ -496,8 +587,30 @@ button {
 }
 
 .hero-buttons {
-  margin-bottom: 35px;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.hero-buttons .nav-button,
+.hero-buttons .secondary-button {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero-buttons .nav-button {
+  padding: 12px 8px;
+  font-size: 12px;
+}
+
+.hero-buttons .secondary-button {
+  padding: 12px 8px;
+  font-size: 12px;
 }
 
 .hero-benefits {
@@ -574,4 +687,33 @@ button {
   text-align: left;
 }
 
+}
+
+@media (max-width: 768px) {
+
+  .hero-benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-benefits > div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .hero-benefits strong {
+    display: block;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .hero-benefits p {
+    font-size: 10px;
+    line-height: 1.3;
+    margin-top: 4px;
+  }
 }
